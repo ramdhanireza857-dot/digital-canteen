@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Digital Canteen</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>🍜 Digital Canteen</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="cart.html" class="cart-link">🛒 Keranjang <span class="cart-count">0</span></a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Menu Kami</h1>
+            <p>Pilih menu favorit Anda</p>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Filter Category -->
+            <div class="filter-section">
+                <h3>Kategori</h3>
+                <div class="category-buttons">
+                    <button class="category-btn active" data-category="semua">Semua</button>
+                    <button class="category-btn" data-category="makanan">🍜 Makanan</button>
+                    <button class="category-btn" data-category="minuman">🥤 Minuman</button>
+                    <button class="category-btn" data-category="snack">🍿 Snack</button>
+                    <button class="category-btn" data-category="dessert">🍰 Dessert</button>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-section">
+                <input type="text" id="searchInput" class="search-input" placeholder="Cari menu...">
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="menuProducts">
+                <!-- Akan diisi oleh JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>Tidak ada menu yang sesuai dengan pencarian Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-category" id="modalCategory"></p>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-price">
+                        <span>Harga:</span>
+                        <h3 id="modalPrice"></h3>
+                    </div>
+                    <div class="modal-rating">
+                        <span id="modalRating"></span>
+                        <span class="rating-value" id="modalRatingValue"></span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Jumlah:</label>
+                        <div class="quantity-controls">
+                            <button id="decreaseBtn" class="qty-btn">-</button>
+                            <input type="number" id="quantityInput" value="1" min="1">
+                            <button id="increaseBtn" class="qty-btn">+</button>
+                        </div>
+                    </div>
+                    <button id="addToCartBtn" class="btn btn-primary">Tambah ke Keranjang</button>
+                    <div id="cartMessage" class="message" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Digital Canteen</h4>
+                    <p>Kantin digital terpercaya untuk kebutuhan makanan dan minuman Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hubungi Kami</h4>
+                    <p>📧 Email: info@digitalcanteen.com</p>
+                    <p>📱 Telepon: +62 123 456 789</p>
+                    <p>📍 Alamat: Jl. Kantin No. 123, Jakarta</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Canteen. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>
