@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Canteen - Kantin Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>🍜 Digital Canteen</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="pages/cart.html" class="cart-link">🛒 Keranjang <span class="cart-count">0</span></a></li>
+                <li><a href="pages/about.html">Tentang</a></li>
+                <li><a href="pages/contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di Digital Canteen</h2>
+            <p>Pesan makanan dan minuman favorit Anda dengan mudah, cepat, dan aman!</p>
+            <a href="pages/menu.html" class="btn btn-primary">Mulai Memesan</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/400x300?text=Food+Delivery" alt="Food Delivery">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Mengapa Memilih Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Cepat</h3>
+                    <p>Pemesanan diproses dengan cepat dan efisien</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Terjangkau</h3>
+                    <p>Harga bersaing dengan kualitas terbaik</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Lezat</h3>
+                    <p>Menu variatif dengan cita rasa istimewa</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Terpercaya</h3>
+                    <p>Ribuan pelanggan puas telah merasakan layanan kami</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Menu Unggulan</h2>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Akan diisi oleh JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="pages/menu.html" class="btn btn-secondary">Lihat Semua Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Pelanggan Puas</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Menu Makanan</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Layanan Tersedia</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5⭐</h3>
+                    <p>Rating Kami</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Daftar Newsletter</h2>
+            <p>Dapatkan penawaran dan promo terbaru langsung ke email Anda!</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Masukkan email Anda" required>
+                <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+            <p id="newsletterMessage"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Digital Canteen</h4>
+                    <p>Kantin digital terpercaya untuk kebutuhan makanan dan minuman Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="pages/menu.html">Menu</a></li>
+                        <li><a href="pages/about.html">Tentang</a></li>
+                        <li><a href="pages/contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hubungi Kami</h4>
+                    <p>📧 Email: info@digitalcanteen.com</p>
+                    <p>📱 Telepon: +62 123 456 789</p>
+                    <p>📍 Alamat: Jl. Kantin No. 123, Jakarta</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Canteen. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
